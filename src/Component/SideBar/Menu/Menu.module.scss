@@ -1,0 +1,40 @@
+.wrapper {
+    // display: flex;
+    // flex-direction: column;
+    width: 356px;
+    padding: 20px 0 26px 8px;
+    margin-left: -18px;
+}
+
+.menu-item {
+    display: flex;
+    font-size: 1.8 rem;
+    font-weight: 700;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color ease-in-out 200ms;
+
+    &.active {
+        color: var(--primary);
+        .icon {
+            display: none;
+        }
+
+        .active-icon {
+            display: flex;
+        }
+    }
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.title {
+    margin-left: 12px;
+}
+
+.active-icon {
+    display: none;
+}
